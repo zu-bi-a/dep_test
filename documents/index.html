@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CorLing: A pronunciation correction application</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#landing" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#stats" class="nav-link scrollto"><i class="bx bx-user"></i> <span>stats</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header --> 
+
+  <!-- ======= landing Section ======= -->
+  <section id="landing" class="d-flex flex-column justify-content-center" style="justify-content: space-around;">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>CorLing</h1>
+      <p>A tool for <span class="typed" data-typed-items="Pronunciation assessment, Pronunciation Correction, Practice"></span></p>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+      
+      
+      <div class="card" style="width: 80rem; align-self: center; align-items: center; background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+        <div class="container">                                    
+          <div class="dropdown" align="center">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+             Levels
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Easy</a>
+              <a class="dropdown-item" href="#">Medium</a>
+              <a class="dropdown-item" href="#">Hard</a>
+            </div>
+          </div>
+        </div>
+        <center><div class="card-body">
+          <div class="card bg-light mb-3" style="max-width: 50rem;">
+            <div class="card-header">Hit the speak button and say the text below aloud</div>
+            <div class="card-body">
+              <p class="card-text">Library</p>
+            </div>
+          </div>
+          <button class="main-btn btn-outline-dark" >Change word</button>
+    </div>
+    
+        <img src="def_avatar.svg" alt="" height="250" width="300">
+
+
+        <p>
+          <button  class="main-btn btn-outline-primary" type="button" id="record">Speak</button>
+          <button  class="main-btn btn-outline-danger" type="button" id="stopRecord" disabled>Stop</button>
+        </p>
+        <p>
+          <audio id=recordedAudio></audio>        
+        </p>
+
+        <a href="result.html" >Evaluate</a></center>
+        
+        <!--<div class="app">
+          <select name="" id="micSelect"></select>
+
+          <select id="visSelect">
+            <option value="frequencybars">Bar</option>
+            <option value="sinewave">Wave</option>
+            <option value="circle">Circle</option>
+          </select>
+
+          <a id="download" >Download</a>
+
+          <div class="audio-controls">
+            <button id="record">Record</button>
+            <button id="stop">Stop</button>
+            <audio id="audio" controls></audio>
+          </div>
+
+          <div id="msg">Recording...</div>
+          <canvas width="500" height="300"></canvas>
+        </div>
+      </div>
+
+  </section><!-- End landing -->
+
+  <main id="main">
+
+    <!-- ======= stats Section ======= -->
+    <section id="stats" class="stats section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>My Stats</h2>
+          <p>Look at how you have been performing while using the CorLing application</p>
+        </div>
+
+        <center>
+        <div class="row stats-container" data-aos="fade-up" data-aos-delay="200" style="display: flex; justify-content: center;">
+
+          <div class="col-lg-4 col-md-6 stats-item filter-app">
+            <div class="stats-wrap"">
+              <img src="assets/img/stats/stats-1.jpg" class="img-fluid" alt="">
+              <div class="stats-info">
+                <h4>About the user</h4>
+                <p>App</p>
+                <div class="stats-links">
+                  <a href="stats-details.html" class="stats-details-lightbox" data-glightbox="type: external" title="stats Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </center>
+
+      </div>
+    </section><!-- End stats Section -->
+
+    
+  </main><!-- End #main -->
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/aud_rec.js"></script>
+  <!--<script src="./assets/js/api.js"></script>-->
+  
+
+</body>
+
+</html>

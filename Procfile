@@ -1,0 +1,1 @@
+web gnicorn G4geeks.wsgi:aplication --log-file -
